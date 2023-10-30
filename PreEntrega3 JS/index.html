@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreEntrega2/JS</title>
+</head>
+<body>
+    <h1 style="background-color: rgb(71, 254, 96);">Ingreso de notas de los alumnos y su promedio</h1>
+    <h3>Te pedimos que nos digas tu nombre, apellido y que nos digas que notas te sacaste en los ultimos 5 examenés. Toda información quedará guardada en la consola.</h3>
+    <form id="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+        <br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" required>
+        <br>
+        <label for="nota1">Primer Exámen:</label>
+        <input type="number" id="nota1" required>
+        <br>
+        <label for="nota2">Segundo Exámen:</label>
+        <input type="number" id="nota2" required>
+        <br>
+        <label for="nota3">Tercer Exámen:</label>
+        <input type="number" id="nota3" required>
+        <br>
+        <label for="nota4">Cuarto Exámen:</label>
+        <input type="number" id="nota4" required>
+        <br>
+        <label for="nota5">Quinto Exámen:</label>
+        <input type="number" id="nota5" required>
+        <br>
+        <button id="agregar" type="submit">Agregar Alumno</button>
+        <button id="reset" type="reset" style="display: none;"></button>
+        <button id="guardar">Guardar en Storage</button>
+    </form>
+    <h2>Lista de Alumnos:</h2>
+    <ul id="alumnos"></ul>
+    <script src="main2.js"></script>
+</body>
+</html>
